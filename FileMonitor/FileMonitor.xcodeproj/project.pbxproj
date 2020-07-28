@@ -1,0 +1,227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41B18BBC24CA756300A8D5F2 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */; };
+		41B18BC224CA756300A8D5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B18BB924CA756300A8D5F2 /* Assets.xcassets */; };
+		41B18BC324CA756300A8D5F2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B18BBA24CA756300A8D5F2 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		41B18B9A24CA60AC00A8D5F2 /* FileMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
+		41B18BB224CA756300A8D5F2 /* FileMonitor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FileMonitor.plist; sourceTree = "<group>"; };
+		41B18BB324CA756300A8D5F2 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		41B18BB424CA756300A8D5F2 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		41B18BB524CA756300A8D5F2 /* FileMonitor.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = FileMonitor.entitlements; sourceTree = "<group>"; };
+		41B18BB624CA756300A8D5F2 /* FileMonitor.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FileMonitor.xcconfig; sourceTree = "<group>"; };
+		41B18BB724CA756300A8D5F2 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		41B18BB924CA756300A8D5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41B18BBB24CA756300A8D5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41B18B9724CA60AC00A8D5F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41B18B9124CA60AC00A8D5F2 = {
+			isa = PBXGroup;
+			children = (
+				41B18BB124CA756300A8D5F2 /* Miscellaneous */,
+				41B18B9B24CA60AC00A8D5F2 /* Products */,
+				41B18BB824CA756300A8D5F2 /* Resources */,
+				41B18BAF24CA756300A8D5F2 /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		41B18B9B24CA60AC00A8D5F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B18B9A24CA60AC00A8D5F2 /* FileMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41B18BAF24CA756300A8D5F2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		41B18BB124CA756300A8D5F2 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				41B18BB724CA756300A8D5F2 /* Base.xcconfig */,
+				41B18BB324CA756300A8D5F2 /* Debug.xcconfig */,
+				41B18BB524CA756300A8D5F2 /* FileMonitor.entitlements */,
+				41B18BB224CA756300A8D5F2 /* FileMonitor.plist */,
+				41B18BB624CA756300A8D5F2 /* FileMonitor.xcconfig */,
+				41B18BB424CA756300A8D5F2 /* Release.xcconfig */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		41B18BB824CA756300A8D5F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41B18BB924CA756300A8D5F2 /* Assets.xcassets */,
+				41B18BBA24CA756300A8D5F2 /* MainMenu.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41B18B9924CA60AC00A8D5F2 /* FileMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B18BA824CA60B000A8D5F2 /* Build configuration list for PBXNativeTarget "FileMonitor" */;
+			buildPhases = (
+				41B18B9624CA60AC00A8D5F2 /* Sources */,
+				41B18B9724CA60AC00A8D5F2 /* Frameworks */,
+				41B18B9824CA60AC00A8D5F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileMonitor;
+			productName = FileMonitor;
+			productReference = 41B18B9A24CA60AC00A8D5F2 /* FileMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41B18B9224CA60AC00A8D5F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Iurii Skoliar";
+				TargetAttributes = {
+					41B18B9924CA60AC00A8D5F2 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 41B18B9524CA60AC00A8D5F2 /* Build configuration list for PBXProject "FileMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41B18B9124CA60AC00A8D5F2;
+			productRefGroup = 41B18B9B24CA60AC00A8D5F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41B18B9924CA60AC00A8D5F2 /* FileMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41B18B9824CA60AC00A8D5F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B18BC224CA756300A8D5F2 /* Assets.xcassets in Resources */,
+				41B18BC324CA756300A8D5F2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41B18B9624CA60AC00A8D5F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B18BBC24CA756300A8D5F2 /* ApplicationDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41B18BBA24CA756300A8D5F2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B18BBB24CA756300A8D5F2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41B18BA624CA60B000A8D5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B18BB324CA756300A8D5F2 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		41B18BA724CA60B000A8D5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B18BB424CA756300A8D5F2 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		41B18BA924CA60B000A8D5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B18BB624CA756300A8D5F2 /* FileMonitor.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		41B18BAA24CA60B000A8D5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B18BB624CA756300A8D5F2 /* FileMonitor.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41B18B9524CA60AC00A8D5F2 /* Build configuration list for PBXProject "FileMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B18BA624CA60B000A8D5F2 /* Debug */,
+				41B18BA724CA60B000A8D5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B18BA824CA60B000A8D5F2 /* Build configuration list for PBXNativeTarget "FileMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B18BA924CA60B000A8D5F2 /* Debug */,
+				41B18BAA24CA60B000A8D5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41B18B9224CA60AC00A8D5F2 /* Project object */;
+}

@@ -1,0 +1,18 @@
+//
+//  FileMonitor.xcconfig
+//  FileMonitor
+//
+//  Created by Iurii Skoliar on 7/28/20.
+//  Copyright © 2020 Iurii Skoliar. All rights reserved.
+//
+
+// Default settings
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+CODE_SIGN_ENTITLEMENTS = $(MISCELLANEOUS_DIR)/$(TARGET_NAME).entitlements
+CODE_SIGN_STYLE = Automatic
+COMBINE_HIDPI_IMAGES = YES
+INFOPLIST_FILE = $(MISCELLANEOUS_DIR)/$(TARGET_NAME).plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
+PRODUCT_BUNDLE_IDENTIFIER = $(PROJECT_BUNDLE_IDENTIFIER)
+PRODUCT_NAME = $(PROJECT_NAME)
+SWIFT_VERSION = 5.0
