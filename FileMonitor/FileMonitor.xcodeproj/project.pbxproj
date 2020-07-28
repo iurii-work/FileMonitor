@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A0640C24D0D09D00BF78E8 /* FileLogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */; };
+		41A0640F24D0D0A300BF78E8 /* FileLogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A0640D24D0D0A200BF78E8 /* FileLogWindow.xib */; };
 		41B18BBC24CA756300A8D5F2 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */; };
 		41B18BC224CA756300A8D5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B18BB924CA756300A8D5F2 /* Assets.xcassets */; };
 		41B18BC324CA756300A8D5F2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B18BBA24CA756300A8D5F2 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLogWindowController.swift; sourceTree = "<group>"; };
+		41A0640E24D0D0A200BF78E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FileLogWindow.xib; sourceTree = "<group>"; };
 		41B18B9A24CA60AC00A8D5F2 /* FileMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
 		41B18BB224CA756300A8D5F2 /* FileMonitor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FileMonitor.plist; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */,
+				41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				41B18BB924CA756300A8D5F2 /* Assets.xcassets */,
+				41A0640D24D0D0A200BF78E8 /* FileLogWindow.xib */,
 				41B18BBA24CA756300A8D5F2 /* MainMenu.xib */,
 			);
 			path = Resources;
@@ -143,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B18BC224CA756300A8D5F2 /* Assets.xcassets in Resources */,
+				41A0640F24D0D0A300BF78E8 /* FileLogWindow.xib in Resources */,
 				41B18BC324CA756300A8D5F2 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,12 +162,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B18BBC24CA756300A8D5F2 /* ApplicationDelegate.swift in Sources */,
+				41A0640C24D0D09D00BF78E8 /* FileLogWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		41A0640D24D0D0A200BF78E8 /* FileLogWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41A0640E24D0D0A200BF78E8 /* Base */,
+			);
+			name = FileLogWindow.xib;
+			sourceTree = "<group>";
+		};
 		41B18BBA24CA756300A8D5F2 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
