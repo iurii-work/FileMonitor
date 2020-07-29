@@ -142,6 +142,7 @@
                             <viewController key="viewController" id="IKf-7J-Unb">
                                 <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWJ-DF-ciw">
                                     <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarDeleteTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hFh-bh-SuL">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" usesAppearanceFont="YES"/>
@@ -155,6 +156,29 @@
                     </touchBarItems>
                 </touchBar>
             </view>
+            <toolbar key="toolbar" implicitIdentifier="B3CDDE13-7FB0-477F-A583-ED1C25CA53B1" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="eCd-VE-GFH">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="sGc-at-MvR"/>
+                    <toolbarItem implicitItemIdentifier="53D1A4BE-2962-4BC4-99C6-ECD8272777D5" label="Clear" paletteLabel="Clear" image="NSTouchBarDeleteTemplate" sizingBehavior="auto" id="vDd-G4-8BJ">
+                        <nil key="toolTip"/>
+                        <button key="view" verticalHuggingPriority="750" id="PV0-0f-ket">
+                            <rect key="frame" x="2" y="14" width="32" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSTouchBarDeleteTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="H8V-Cw-Klj">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                        </button>
+                        <connections>
+                            <action selector="clear:" target="-1" id="Py2-bt-lZP"/>
+                        </connections>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="sGc-at-MvR"/>
+                    <toolbarItem reference="vDd-G4-8BJ"/>
+                </defaultToolbarItems>
+            </toolbar>
             <connections>
                 <binding destination="-2" name="title" keyPath="self.fileURL.lastPathComponent" previousBinding="DiA-Q4-Pwv" id="Xdr-q6-EMu"/>
                 <binding destination="-2" name="representedFilename" keyPath="self.fileURL.path" id="DiA-Q4-Pwv"/>
