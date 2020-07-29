@@ -1,0 +1,16 @@
+//
+//  Test.xcconfig
+//  FileMonitor
+//
+//  Created by Iurii Skoliar on 7/29/20.
+//  Copyright © 2020 Iurii Skoliar. All rights reserved.
+//
+
+#include "Debug.xcconfig"
+
+// Default settings
+ENABLE_TESTABILITY = YES
+
+// Custom settings
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) TEST=1
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) TEST

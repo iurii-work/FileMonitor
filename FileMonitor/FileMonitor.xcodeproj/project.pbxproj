@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		413EE79524D1CDB6005A37B6 /* FileMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EE79424D1CDB6005A37B6 /* FileMonitor.swift */; };
+		413EE79824D1CDD0005A37B6 /* FileMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413EE79724D1CDD0005A37B6 /* FileMonitorTests.swift */; };
 		41A0640C24D0D09D00BF78E8 /* FileLogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */; };
 		41A0640F24D0D0A300BF78E8 /* FileLogWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A0640D24D0D0A200BF78E8 /* FileLogWindow.xib */; };
 		41B18BBC24CA756300A8D5F2 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */; };
@@ -14,9 +16,25 @@
 		41B18BC324CA756300A8D5F2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B18BBA24CA756300A8D5F2 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		41A0641924D1CC6900BF78E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B18B9224CA60AC00A8D5F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41B18B9924CA60AC00A8D5F2;
+			remoteInfo = FileMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		413EE79424D1CDB6005A37B6 /* FileMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileMonitor.swift; sourceTree = "<group>"; };
+		413EE79724D1CDD0005A37B6 /* FileMonitorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileMonitorTests.swift; sourceTree = "<group>"; };
 		41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLogWindowController.swift; sourceTree = "<group>"; };
 		41A0640E24D0D0A200BF78E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FileLogWindow.xib; sourceTree = "<group>"; };
+		41A0641424D1CC6900BF78E8 /* FileMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A0641E24D1CC7B00BF78E8 /* FileMonitorTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FileMonitorTests.xcconfig; sourceTree = "<group>"; };
+		41A0641F24D1CC7B00BF78E8 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		41A0642024D1CC7B00BF78E8 /* FileMonitorTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FileMonitorTests.plist; sourceTree = "<group>"; };
 		41B18B9A24CA60AC00A8D5F2 /* FileMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
 		41B18BB224CA756300A8D5F2 /* FileMonitor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FileMonitor.plist; sourceTree = "<group>"; };
@@ -30,6 +48,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		41A0641124D1CC6900BF78E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41B18B9724CA60AC00A8D5F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,6 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		413EE79324D1CD97005A37B6 /* FileMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */,
+				41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */,
+				413EE79424D1CDB6005A37B6 /* FileMonitor.swift */,
+			);
+			name = FileMonitor;
+			sourceTree = "<group>";
+		};
+		413EE79624D1CDC0005A37B6 /* FileMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				413EE79724D1CDD0005A37B6 /* FileMonitorTests.swift */,
+			);
+			name = FileMonitorTests;
+			sourceTree = "<group>";
+		};
 		41B18B9124CA60AC00A8D5F2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				41B18B9A24CA60AC00A8D5F2 /* FileMonitor.app */,
+				41A0641424D1CC6900BF78E8 /* FileMonitorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +105,8 @@
 		41B18BAF24CA756300A8D5F2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				41B18BB024CA756300A8D5F2 /* ApplicationDelegate.swift */,
-				41A0640B24D0D09D00BF78E8 /* FileLogWindowController.swift */,
+				413EE79324D1CD97005A37B6 /* FileMonitor */,
+				413EE79624D1CDC0005A37B6 /* FileMonitorTests */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -75,7 +119,10 @@
 				41B18BB524CA756300A8D5F2 /* FileMonitor.entitlements */,
 				41B18BB224CA756300A8D5F2 /* FileMonitor.plist */,
 				41B18BB624CA756300A8D5F2 /* FileMonitor.xcconfig */,
+				41A0642024D1CC7B00BF78E8 /* FileMonitorTests.plist */,
+				41A0641E24D1CC7B00BF78E8 /* FileMonitorTests.xcconfig */,
 				41B18BB424CA756300A8D5F2 /* Release.xcconfig */,
+				41A0641F24D1CC7B00BF78E8 /* Test.xcconfig */,
 			);
 			path = Miscellaneous;
 			sourceTree = "<group>";
@@ -93,6 +140,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		41A0641324D1CC6900BF78E8 /* FileMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41A0641B24D1CC6900BF78E8 /* Build configuration list for PBXNativeTarget "FileMonitorTests" */;
+			buildPhases = (
+				41A0641024D1CC6900BF78E8 /* Sources */,
+				41A0641124D1CC6900BF78E8 /* Frameworks */,
+				41A0641224D1CC6900BF78E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41A0641A24D1CC6900BF78E8 /* PBXTargetDependency */,
+			);
+			name = FileMonitorTests;
+			productName = FileMonitorTests;
+			productReference = 41A0641424D1CC6900BF78E8 /* FileMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		41B18B9924CA60AC00A8D5F2 /* FileMonitor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41B18BA824CA60B000A8D5F2 /* Build configuration list for PBXNativeTarget "FileMonitor" */;
@@ -120,6 +185,11 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Iurii Skoliar";
 				TargetAttributes = {
+					41A0641324D1CC6900BF78E8 = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+						TestTargetID = 41B18B9924CA60AC00A8D5F2;
+					};
 					41B18B9924CA60AC00A8D5F2 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -139,11 +209,19 @@
 			projectRoot = "";
 			targets = (
 				41B18B9924CA60AC00A8D5F2 /* FileMonitor */,
+				41A0641324D1CC6900BF78E8 /* FileMonitorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		41A0641224D1CC6900BF78E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41B18B9824CA60AC00A8D5F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,16 +235,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		41A0641024D1CC6900BF78E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413EE79824D1CDD0005A37B6 /* FileMonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41B18B9624CA60AC00A8D5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				41B18BBC24CA756300A8D5F2 /* ApplicationDelegate.swift in Sources */,
 				41A0640C24D0D09D00BF78E8 /* FileLogWindowController.swift in Sources */,
+				413EE79524D1CDB6005A37B6 /* FileMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41A0641A24D1CC6900BF78E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41B18B9924CA60AC00A8D5F2 /* FileMonitor */;
+			targetProxy = 41A0641924D1CC6900BF78E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41A0640D24D0D0A200BF78E8 /* FileLogWindow.xib */ = {
@@ -188,6 +283,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		41A0641C24D1CC6900BF78E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A0641E24D1CC7B00BF78E8 /* FileMonitorTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		41A0641D24D1CC6900BF78E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A0641E24D1CC7B00BF78E8 /* FileMonitorTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		41A0642124D1CC8400BF78E8 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A0641F24D1CC7B00BF78E8 /* Test.xcconfig */;
+			buildSettings = {
+			};
+			name = Test;
+		};
+		41A0642224D1CC8400BF78E8 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41B18BB624CA756300A8D5F2 /* FileMonitor.xcconfig */;
+			buildSettings = {
+			};
+			name = Test;
+		};
+		41A0642324D1CC8400BF78E8 /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A0641E24D1CC7B00BF78E8 /* FileMonitorTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Test;
+		};
 		41B18BA624CA60B000A8D5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41B18BB324CA756300A8D5F2 /* Debug.xcconfig */;
@@ -219,11 +349,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		41A0641B24D1CC6900BF78E8 /* Build configuration list for PBXNativeTarget "FileMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41A0641C24D1CC6900BF78E8 /* Debug */,
+				41A0641D24D1CC6900BF78E8 /* Release */,
+				41A0642324D1CC8400BF78E8 /* Test */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		41B18B9524CA60AC00A8D5F2 /* Build configuration list for PBXProject "FileMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41B18BA624CA60B000A8D5F2 /* Debug */,
 				41B18BA724CA60B000A8D5F2 /* Release */,
+				41A0642124D1CC8400BF78E8 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -233,6 +374,7 @@
 			buildConfigurations = (
 				41B18BA924CA60B000A8D5F2 /* Debug */,
 				41B18BAA24CA60B000A8D5F2 /* Release */,
+				41A0642224D1CC8400BF78E8 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

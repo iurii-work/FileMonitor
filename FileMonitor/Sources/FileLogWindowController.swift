@@ -10,11 +10,20 @@ import Cocoa
 
 class FileLogWindowController: NSWindowController {
 	var completionHandler: (() -> Void)?
+	@IBOutlet private var eventsController: NSArrayController!
 	@objc dynamic var fileURL: URL?
+
+	func log(event: FileEvent) {
+		self.eventsController.addObject(event)
+	}
 }
 
 extension NSNib.Name {
 	static let fileLogWindow = NSNib.Name("FileLogWindow")
+}
+
+extension FileLogWindowController: NSTableViewDelegate {
+	func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool { false }
 }
 
 extension FileLogWindowController: NSWindowDelegate {

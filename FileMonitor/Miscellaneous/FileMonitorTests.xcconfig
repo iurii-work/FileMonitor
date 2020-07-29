@@ -1,0 +1,18 @@
+//
+//  FileMonitorTests.xcconfig
+//  FileMonitor
+//
+//  Created by Iurii Skoliar on 7/29/20.
+//  Copyright © 2020 Iurii Skoliar. All rights reserved.
+//
+
+// Default settings
+BUNDLE_LOADER = $(TEST_HOST)
+CODE_SIGN_STYLE = Automatic
+COMBINE_HIDPI_IMAGES = YES
+INFOPLIST_FILE = $(MISCELLANEOUS_DIR)/$(TARGET_NAME).plist
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks
+PRODUCT_BUNDLE_IDENTIFIER = $(PROJECT_BUNDLE_IDENTIFIER)Tests
+PRODUCT_NAME = $(PROJECT_NAME)Tests
+SWIFT_VERSION = 5.0
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/$(PROJECT_NAME).app/Contents/MacOS/$(PROJECT_NAME)
