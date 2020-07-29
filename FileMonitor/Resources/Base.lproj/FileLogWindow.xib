@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="16002"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="FileLogWindowController" customModule="FileMonitor" customModuleProvider="target">
@@ -134,6 +136,24 @@
                     <constraint firstAttribute="bottom" secondItem="3TZ-8H-ZNZ" secondAttribute="bottom" id="wi8-4a-Zhh"/>
                     <constraint firstItem="3TZ-8H-ZNZ" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="yjx-X6-Db6"/>
                 </constraints>
+                <touchBar key="touchBar" customizationIdentifier="com.iiurii.test" principalItem="b5j-lY-9FD" id="JgU-I6-MNS">
+                    <touchBarItems>
+                        <touchBarItem identifier="Clear" customizationLabel="Clear" id="b5j-lY-9FD">
+                            <viewController key="viewController" id="IKf-7J-Unb">
+                                <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWJ-DF-ciw">
+                                    <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                    <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarDeleteTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hFh-bh-SuL">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="clear:" target="-1" id="7Tl-kb-sEy"/>
+                                    </connections>
+                                </button>
+                            </viewController>
+                        </touchBarItem>
+                    </touchBarItems>
+                </touchBar>
             </view>
             <connections>
                 <binding destination="-2" name="title" keyPath="self.fileURL.lastPathComponent" previousBinding="DiA-Q4-Pwv" id="Xdr-q6-EMu"/>
@@ -143,4 +163,7 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </window>
     </objects>
+    <resources>
+        <image name="NSTouchBarDeleteTemplate" width="15" height="30"/>
+    </resources>
 </document>
