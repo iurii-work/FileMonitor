@@ -13,6 +13,12 @@ class FileLogWindowController: NSWindowController {
 	@IBOutlet private var eventsController: NSArrayController!
 	@objc dynamic var fileURL: URL?
 
+	@IBAction private func clear(_ sender: Any) {
+		if let events = self.eventsController.arrangedObjects as? NSArray {
+			self.eventsController.remove(atArrangedObjectIndexes: IndexSet(integersIn: 0..<events.count))
+		}
+	}
+
 	func log(event: FileEvent) {
 		self.eventsController.addObject(event)
 	}

@@ -66,6 +66,11 @@
                                     <action selector="openFile:" target="Voe-Tx-rLC" id="Q5U-qf-FIr"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Clear" keyEquivalent="k" id="n4l-tx-t1p">
+                                <connections>
+                                    <action selector="clear:" target="-1" id="JJJ-p2-78z"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
